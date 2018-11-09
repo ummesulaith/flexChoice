@@ -41,6 +41,18 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         editTextPassword = (EditText) findViewById(R.id.edpaswd);
         editTextRpassword = (EditText) findViewById(R.id.edrpaswd);
         buttonSignup = (Button) findViewById(R.id.btnreg);
+        txthome = (TextView) findViewById(R.id.tlogin);
+        txthome.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                        Intent in = new Intent(RegisterActivity.this,LoginActivity.class);
+        startActivity(in);
+            }
+
+        });
+
 
 
         progressDialog = new ProgressDialog(this);
@@ -91,6 +103,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         if(task.isSuccessful()){
                             //display some message here
                             Toast.makeText(RegisterActivity.this,"Successfully registered",Toast.LENGTH_LONG).show();
+//                            Intent i = new Intent(RegisterActivity.this,HomeActivity.class);
+//                            startActivity(i);
                         }else{
                             //display some message here
                             Toast.makeText(RegisterActivity.this,"Registration Error",Toast.LENGTH_LONG).show();
@@ -98,7 +112,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         progressDialog.dismiss();
                     }
                 });
-        Intent i = new Intent(RegisterActivity.this,HomeActivity.class);
+
 
     }
 

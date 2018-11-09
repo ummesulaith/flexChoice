@@ -64,7 +64,7 @@
         android:textColor="@color/colorBaseText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/blogin"
         android:layout_width="287dp"
         android:layout_height="37dp"
         android:layout_alignStart="@+id/edpwd"
