@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FlexChoice</string>
+    <string name="login">FLEXCHOICE</string>
+    <string name="emailid"> Enter your email id </string>
+    <string name="pwd"> Enter your password </string>
+    <string name="signup"> Not Registered yet? Create a new account! </string>
+    <string name="blogin"> LOGIN </string>
+
+    <!--Registeration-->
+
+    <string name="reg"> Registration </string>
+    <string name="name"> Name </string>
+    <string name="email"> Email id </string>
+    <string name="ph">Phone Number</string>
+    <string name="rpwd"> Confirm password </string>
+    <string name="breg">Register</string>
+    <string name="ppwd"> password </string>
+    <string name="tlogin"> Already have an account? click here to login! </string>
+
+
+</resources>

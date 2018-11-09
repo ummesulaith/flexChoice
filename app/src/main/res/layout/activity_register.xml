@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/reg"
+        android:textColor="@color/colorBaseText"
+        android:textSize="20sp"
+        android:fontFamily="@font/permanent_marker"/>
+
+    <EditText
+        android:id="@+id/edeid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reg"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:autofillHints=""
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edpaswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="295dp"
+        android:autofillHints=""
+        android:background="#fff"
+        android:ems="10"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edrpaswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:autofillHints=""
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/rpwd"
+        android:inputType="textPassword"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="154dp"
+        android:background="#4d5258"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/breg"
+        android:textColor="@color/colorBaseText" />
+
+    <TextView
+        android:id="@+id/tlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:text="@string/tlogin"
+        android:fontFamily="@font/permanent_marker"
+        android:textColor="@color/colorBaseText"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/edeid"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_toStartOf="@+id/btnreg"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/email"
+        android:textColor="@color/colorBaseText" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignTop="@+id/edpaswd"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/ppwd"
+        android:textColor="@color/colorBaseText" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="246dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/rpwd"
+        android:textColor="@color/colorBaseText" />
+
+
+</RelativeLayout>

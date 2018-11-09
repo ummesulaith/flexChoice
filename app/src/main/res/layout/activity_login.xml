@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/login"
+        android:textColor="@color/colorBaseText"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:autofillHints=""
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/emailid"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edpwd"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edemail"
+        android:layout_alignStart="@+id/edemail"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="206dp"
+        android:autofillHints=""
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/signup"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/signup"
+        android:textColor="@color/colorBaseText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="287dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/edpwd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="178dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/blogin"
+        android:textColor="@color/colorBaseText" />
+
+
+</RelativeLayout>

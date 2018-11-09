@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "397392261414",
+    "firebase_url": "https://flexchoice-9b9bb.firebaseio.com",
+    "project_id": "flexchoice-9b9bb",
+    "storage_bucket": "flexchoice-9b9bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397392261414:android:0a2f2bc16e6a5014",
+        "android_client_info": {
+          "package_name": "flexchoice.com.flexchoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397392261414-vckreovh7hfnuihskdb7mkc5bn2sfnu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNg5QPzz1PgntLPyCMWQkghy-qycSe1Pk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
