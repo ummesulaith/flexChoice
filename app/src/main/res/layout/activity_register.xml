@@ -7,62 +7,62 @@
     android:background="@color/colorPrimary"
     tools:context=".RegisterActivity">
 
-    <TextView
-        android:id="@+id/reg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/reg"
-        android:textColor="@color/colorBaseText"
-        android:textSize="20sp"
-        android:fontFamily="@font/permanent_marker"/>
-
     <EditText
         android:id="@+id/edeid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/reg"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-50dp"
-        android:layout_marginTop="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
         android:autofillHints=""
         android:background="#ffff"
         android:ems="10"
-        android:hint="@string/email"
+        android:hint="@string/emailid"
         android:inputType="textEmailAddress"
         tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/edpaswd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/reg"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-50dp"
-        android:layout_marginBottom="326dp"
-        android:autofillHints=""
-        android:background="#fff"
-        android:ems="10"
-        android:hint="@string/pwd"
-        android:inputType="textPassword"
-        tools:targetApi="o" />
-
-    <EditText
         android:id="@+id/edrpaswd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="262dp"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/tlogin"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="312dp"
         android:autofillHints=""
         android:background="#ffff"
         android:ems="10"
         android:hint="@string/rpwd"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/reg"
+        android:textColor="@color/colorBaseText"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/edpaswd"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/btnreg"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginTop="226dp"
+        android:autofillHints=""
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/pwd"
+        android:inputType="textEmailAddress"
         tools:targetApi="o" />
 
     <Button
@@ -73,9 +73,9 @@
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="154dp"
-        android:background="#4d5258"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="123dp"
+        android:background="#e7e7e7"
 
         android:text="@string/breg"
         android:textColor="@color/colorBaseText" />

@@ -18,4 +18,24 @@
     <string name="tlogin"> Already have an account? click here to login! </string>
 
 
+    <!--<&#45;&#45;&#45;&#45;Splash Screen -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+    <string name="title_activity_welcome">Home Screen</string>
+
+    <string name="next"> Next </string>
+    <string name="skip">SKIP</string>
+
+    <string name="start">GOT IT</string>
+
+    <!--DrawerLayout-->
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

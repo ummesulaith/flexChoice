@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F4F2F1</color>
+    <color name="colorPrimary">#422b00</color>
     <!--<color name="colorPrimaryDark">#00574B</color>-->
     <color name="colorBaseText">#422b00</color>
     <!--<color name="primary_material_light">#422b00</color>-->
-    <!--<color name="foreground_material_light">#fec100</color>-->
+    <color name="foreground_material_light">#fec100</color>
     <color name="background_material_light">#ffffff</color>
     <color name="grey">#4d5258</color>
+
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+
+
+    <!--cardview & recyclerview-->
+
+    <color name="grey_300"/>
+<color name="title_colour">#ffffff</color>
+    <color name="nav_background">#eeeeee</color>
 </resources>
     <!--//brown 422b00 yellow - fec100-->
