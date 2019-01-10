@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textColor="@color/foreground_material_light"/>
+</RelativeLayout>
