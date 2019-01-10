@@ -1,4 +1,4 @@
-package flexchoice.com.flexchoice;
+package flexchoice.com.flexchoice.Activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -16,7 +16,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+
+import flexchoice.com.flexchoice.R;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 

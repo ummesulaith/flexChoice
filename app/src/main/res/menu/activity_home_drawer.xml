@@ -10,7 +10,7 @@
             android:icon="@drawable/ic_android_black_24dp"/>
 
         <item android:id="@+id/nav_order"
-            android:title="MY Order"
+            android:title="My Order"
             android:icon="@drawable/ic_android_black_24dp"/>
 
         <item android:id="@+id/nav_trackorder"
@@ -36,6 +36,8 @@
         <item android:id="@+id/nav_fnq"
             android:title="Feedback and Query"
             android:icon="@drawable/ic_android_black_24dp"/>
+
+
 
         <item android:id="@+id/nav_returns"
             android:title="Returns"

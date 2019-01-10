@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,7 +16,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".AppIntroActivity"
+            android:name=".Activity.AppIntroActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,13 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".Activity.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Activity.RegisterActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
     </application>

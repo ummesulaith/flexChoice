@@ -1,14 +1,17 @@
-package flexchoice.com.flexchoice;
+package flexchoice.com.flexchoice.Activity;
 
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
+
+import flexchoice.com.flexchoice.Activity.HomeActivity;
+import flexchoice.com.flexchoice.Activity.LoginActivity;
+import flexchoice.com.flexchoice.R;
 
 public class AppIntroActivity extends AppIntro {
 
