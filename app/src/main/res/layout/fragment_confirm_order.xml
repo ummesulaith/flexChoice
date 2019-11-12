@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_light"
+    tools:context=".Fragments.ConfirmOrderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+
+    android:background="@color/gen_white"
+    >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:text="Enter the Shipment information"
+       android:textSize="20sp">
+   </TextView>
+  </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:background="@color/gen_white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmname"
+            android:hint="@string/name"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/confirmphone"
+           android:layout_marginTop="20dp"
+
+           android:layout_below="@+id/confirmname"
+           android:hint="@string/ph"
+           android:inputType="phone"
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+
+           android:id="@+id/confirmaddr"
+           android:hint="Address"
+           android:layout_below="@id/confirmphone"
+           android:inputType="textPostalAddress"
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/confirmcity"
+           android:hint="City"
+           android:inputType="text"
+           android:layout_marginTop="20dp"
+
+           android:layout_below="@id/confirmaddr"
+           />
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Payment"
+           android:id="@+id/confirmpayment"
+           android:layout_alignParentBottom="true"/>
+   </RelativeLayout>
+
+</LinearLayout>

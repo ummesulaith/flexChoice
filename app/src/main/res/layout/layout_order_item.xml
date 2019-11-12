@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:paddingBottom="8dp">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=" Orders"-->
+        <!--android:textSize="35sp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:typeface="serif"-->
+        <!--android:textColor="@color/foreground_material_light"/>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="65dp">
+        <!--<ImageView-->
+            <!--android:src="@drawable/ic_android_black_24dp"-->
+            <!--android:id="@+id/image_cart"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/stay_color"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+        <LinearLayout  android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/txtpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product details"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="10dp"/>
+            <TextView
+                android:id="@+id/orderstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount soon to be refunded"
+                android:textSize="14dp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price : 500"
+                android:textSize="10dp"/>
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="8dp">-->
+                <!--<TextView android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Qty: 1"-->
+                    <!--android:textSize="10dp"/>-->
+                <!--<TextView android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Size: 41"-->
+                    <!--android:textSize="10dp"-->
+                    <!--android:layout_marginLeft="8dp"/>-->
+            <!--</LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

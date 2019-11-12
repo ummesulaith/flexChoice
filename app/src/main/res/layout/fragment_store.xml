@@ -3,12 +3,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
         android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+    </com.google.android.gms.maps.MapView>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/map"
+        android:background="#000"
+        android:id="@+id/v2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Store"
-        android:textSize="35sp"
-        android:gravity="center_horizontal"
-        android:typeface="serif"
-        android:textColor="@color/foreground_material_light"/>
+        android:id="@+id/maptxt"
+        android:text="flexChoice"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/v2"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vasanth nagar Banaglore-560052"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/v2"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/maptxt"
+        android:background="#000"
+        android:id="@+id/v1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapphone"
+        android:text="7259812420"
+        android:layout_below="@+id/v1"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cflexchoice@gmail.com"
+        android:layout_below="@+id/v1"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mapphone"
+        android:layout_marginLeft="275dp"
+
+        android:id="@+id/pphonemap"
+        android:src="@drawable/ic_call_black_24dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mapphone"
+        android:id="@+id/mapemail"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_mail_outline_black_24dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/mapphone"
+        android:background="#000"
+       />
+
+
 </RelativeLayout>

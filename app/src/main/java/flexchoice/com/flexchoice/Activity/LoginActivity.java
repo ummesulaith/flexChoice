@@ -20,11 +20,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import flexchoice.com.flexchoice.R;
 
 public class LoginActivity extends Activity {
-    TextView txtreg;
+    TextView txtreg,txtadmin;
     EditText eEmail,epassword;
     Button bloginn;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private FirebaseAuth mAuth;
+    private String parentDbName = "Users";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,18 +34,24 @@ public class LoginActivity extends Activity {
         txtreg=(TextView)findViewById(R.id.signup);
         txtreg.setOnClickListener(new View.OnClickListener() {
 
-        @Override
-        public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
 
-        Intent i = new Intent(LoginActivity.this,RegisterActivity.class);
-        startActivity(i);
-        }
+                Intent i = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(i);
+            }
 
-    });
-
+        });
+        txtadmin = (TextView)findViewById(R.id.admin);
+        txtadmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this,AdminLogin.class);
+                startActivity(i);
+            }
+        });
         eEmail = (EditText) findViewById(R.id.edemail);
         epassword = (EditText) findViewById(R.id.edpwd);
-
         bloginn = (Button) findViewById(R.id.blogin);
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -88,7 +95,49 @@ public class LoginActivity extends Activity {
                 }
             }
         });
-    }
+        //  AllowAccessToAccount(Email,Password);
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    //    private void AllowAccessToAccount(final String Email, final String Password) {
+//        final DatabaseReference RootRef;
+//        RootRef = FirebaseDatabase.getInstance().getReference();
+//
+//
+//        RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+//            {
+//                if (dataSnapshot.child(parentDbName).child(Email).exists())
+//                {
+//                    Users usersData = dataSnapshot.child(parentDbName).child(Email).getValue(Users.class);
+//                    if (usersData.getPhone().equals(Email))
+//                    {
+//                        if (usersData.getPassword().equals(Password)) {
+//
+//                            Toast.makeText(LoginActivity.this, "Welcome , you are logged in Successfully...", Toast.LENGTH_SHORT).show();
+//
+//                        }
+//                    }
+//                }
+//                else
+//                {
+//                    Toast.makeText(LoginActivity.this, "Account with this " + Email + " number do not exists.", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+//    }
+}
+
+
 

@@ -15,14 +15,63 @@
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <ViewFlipper
-        android:layout_width="match_parent"
-         android:layout_height="200dp"
-        android:layout_marginTop="60px"
-        android:id="@+id/v_flipper"
+        android:layout_height="match_parent"
+        android:background="@color/color_white">
+    <!--<ViewFlipper-->
+        <!--android:layout_width="match_parent"-->
+         <!--android:layout_height="200dp"-->
+        <!--android:layout_marginTop="60px"-->
+        <!--android:id="@+id/v_flipper"-->
+        <!--android:background="@drawable/active_dot"-->
+        <!--android:layout_centerHorizontal="true">-->
 
-        android:layout_centerHorizontal="true"></ViewFlipper>
+    <!--</ViewFlipper>-->
+
+        <flexchoice.com.flexchoice.Adapters.ViewFlipperIndicator
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="60px"
+            android:layout_centerHorizontal="true">
+
+
+
+            <ImageView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/offer_two"
+                />
+
+            <ImageView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/offer_three"
+                 />
+
+
+
+            <ImageView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/offer_five"
+                />
+
+        </flexchoice.com.flexchoice.Adapters.ViewFlipperIndicator>
     </RelativeLayout>
 
 

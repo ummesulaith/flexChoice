@@ -11,30 +11,43 @@
         android:id="@+id/edeid"
         android:layout_width="287dp"
         android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="146dp"
+       android:layout_marginTop="135dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         android:autofillHints=""
         android:background="#ffff"
         android:ems="10"
         android:hint="@string/emailid"
         android:inputType="textEmailAddress"
-        tools:targetApi="o" />
+       />
+
+    <EditText
+        android:id="@+id/edpaswd"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="@string/pwd"
+
+        />
 
     <EditText
         android:id="@+id/edrpaswd"
         android:layout_width="287dp"
         android:layout_height="45dp"
-        android:layout_alignStart="@+id/tlogin"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-7dp"
-        android:layout_marginTop="312dp"
-        android:autofillHints=""
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         android:background="#ffff"
         android:ems="10"
         android:hint="@string/rpwd"
-        android:inputType="textEmailAddress"
-        tools:targetApi="o" />
+        android:inputType="textPassword"
+        />
 
     <TextView
         android:id="@+id/reg"
@@ -46,39 +59,22 @@
         android:layout_marginTop="65dp"
         android:fontFamily="@font/permanent_marker"
         android:text="@string/reg"
-        android:textColor="@color/colorBaseText"
+        android:textColor="@color/foreground_material_light"
         android:textSize="20sp" />
 
 
-    <EditText
-        android:id="@+id/edpaswd"
-        android:layout_width="287dp"
-        android:layout_height="45dp"
-        android:layout_alignStart="@+id/btnreg"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-18dp"
-        android:layout_marginTop="226dp"
-        android:autofillHints=""
-        android:background="#ffff"
-        android:ems="10"
-        android:hint="@string/pwd"
-        android:inputType="textEmailAddress"
-        tools:targetApi="o" />
+
 
     <Button
         android:id="@+id/btnreg"
         android:layout_width="245dp"
         android:layout_height="wrap_content"
-
-
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="123dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="35dp"
         android:background="#e7e7e7"
-
         android:text="@string/breg"
-        android:textColor="@color/colorBaseText" />
+        android:textColor="@color/foreground_material_light" />
 
     <TextView
         android:id="@+id/tlogin"
@@ -88,8 +84,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="86dp"
         android:text="@string/tlogin"
-
-        android:textColor="@color/colorBaseText"/>
+        android:textColor="@color/foreground_material_light"/>
 
 
 </RelativeLayout>

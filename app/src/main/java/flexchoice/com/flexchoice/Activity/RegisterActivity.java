@@ -48,8 +48,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onClick(View view) {
 
-                        Intent in = new Intent(RegisterActivity.this,LoginActivity.class);
-        startActivity(in);
+                Intent in = new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(in);
             }
 
         });

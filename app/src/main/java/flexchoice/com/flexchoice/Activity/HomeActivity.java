@@ -1,5 +1,6 @@
 package flexchoice.com.flexchoice.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,8 +11,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import flexchoice.com.flexchoice.Fragments.CartFragment;
 import flexchoice.com.flexchoice.Fragments.CategorieshrFragment;
@@ -28,12 +33,14 @@ import flexchoice.com.flexchoice.R;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private FirebaseAuth firebaseAuth;
+    Toolbar toolbar;
     Fragment fragment ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Home");
         setSupportActionBar(toolbar);
 
@@ -55,6 +62,13 @@ public class HomeActivity extends AppCompatActivity
         fragmentTransaction.replace(R.id.content_frame, mAboutFragment, "home");
         fragmentTransaction.commit();
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        if (firebaseAuth.getCurrentUser() == null) {
+            finish();
+            startActivity(new Intent(this, LoginActivity.class));
+        }
+        FirebaseUser user = firebaseAuth.getCurrentUser();
 //        CategorieshrFragment banner = new CategorieshrFragment();
 //        fragmentTransaction.replace(R.id.content_frame, banner, "home");
 //        fragmentTransaction.commit();
@@ -101,46 +115,63 @@ public class HomeActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_profile)
+        if (id == R.id.nav_home)
+        {
+            Intent i = new Intent(this,HomeActivity.class);
+            startActivity(i);
+        }
+
+        else if (id == R.id.nav_profile)
         {
             fragment = new ProfileFragment();
+            toolbar.setTitle("Profile");
         }
         else if (id == R.id.nav_order)
         {
             fragment = new OrderFragment();
+            toolbar.setTitle("Orders");
 
         }
         else if (id == R.id.nav_trackorder)
         {
                 fragment = new TrackFragment();
+            toolbar.setTitle("Track Order");
         }
         else if (id == R.id.nav_cart)
         {
             fragment = new CartFragment();
+            toolbar.setTitle("Cart");
         }
         else if (id == R.id.nav_payment)
         {
                 fragment = new PaymentFragment();
+            toolbar.setTitle("Payment");
         }
         else if (id == R.id.nav_deposit)
         {
                 fragment = new DepositFragment();
+            toolbar.setTitle("Deposit");
         }
         else if (id == R.id.nav_store)
         {
             fragment = new StoreFragment();
+            toolbar.setTitle("Store");
         }
         else if (id == R.id.nav_fnq)
         {
             fragment = new FnqFragment();
+            toolbar.setTitle("Feedback and Query");
         }
         else if (id == R.id.nav_returns)
         {
             fragment = new ReturnsFragment();
+            toolbar.setTitle("Returns and Refunds");
         }
         else if (id == R.id.nav_logout)
         {
-
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
         }
 
     if (fragment !=null)
